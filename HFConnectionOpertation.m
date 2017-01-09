@@ -36,7 +36,7 @@
 - (id)initWithRequest:(HFRequest *)request_ {
     if (self = [super init]) {
         self.request = request_;
-        response = [[LWResponse alloc] init];
+        response = [[HFResponse alloc] init];
         self.delegate = self.request.delegate;
         if (request.persistentType == SAVE_TO_FILE){
             fileHandle = [[HFFileHandle alloc] initWithRequest:request];
